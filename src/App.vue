@@ -29,8 +29,12 @@ export default {
     box-sizing: border-box;
   };
   body {
+    font-size: 0.8rem;
+    height: 100vh
+  };
+  .container {
     max-width: 900px;
     margin: auto;
-    font-size: 0.8rem
+    height: 100%
   };
 </style>
