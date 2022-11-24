@@ -46,12 +46,19 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="socials">
-      <div class="container">
-        <button></button>
+  </div>
+  <div class="footer-socials">
+      <div class="container social-icon">
         <div>
+          <button>SIGN-UP NOW!</button>
+        </div>
+        <div class="icon">
           <p>FOLLOW US</p>
+          <img src="@/footer-facebook.png" alt="">
+          <img src="@/footer-twitter.png" alt="">
+          <img src="@/footer-youtube.png" alt="">
+          <img src="@/footer-pinterest.png" alt="">
+          <img src="@/footer-periscope.png" alt="">
         </div>
       </div>
     </div>
@@ -81,13 +88,33 @@ export default {
       .footer-link {
       display: flex;
       gap: 3rem;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: #959595;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: #959595;
+          }
         }
       }
+    }
+    .footer-socials {
+      background-color: #303030;
+      height: 12vh;
+      .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .icon {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          p {
+            color: #0282F9;
+          }
+          img {
+            width: 1.5rem;
+          }
+        }
       }
     }
     p {
@@ -97,4 +124,5 @@ export default {
       font-size: 1rem;
     }
   }
+
 </style>
