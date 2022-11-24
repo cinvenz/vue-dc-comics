@@ -30,7 +30,6 @@ export default {
   header {
     text-align: center;
     height: 14vh;
-    background-color: gainsboro;
     nav {
       display: flex;
       justify-content: space-between;
