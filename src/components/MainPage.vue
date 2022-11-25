@@ -2,7 +2,7 @@
   <main>
     <div class="container-black">
       <div class="container contents">
-        &#8594;Contents goes here&#8592;
+        &#8594; Contents goes here &#8592;
       </div>
     </div>
     <div class="container-blue-icon">
