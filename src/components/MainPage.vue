@@ -3,7 +3,11 @@
     <div class="container-black">
       <div class="main-img"></div>
       <div class="current-series"></div>
-      <div class="container cartoon-card"></div>
+      <div class="main-back">
+        <div class="container cartoon-card">
+          <CardSeries class="" v-for="i in 12" :key="i" />
+        </div>
+      </div>
     </div>
     <div class="container-blue-icon">
       <div class="container icons">
@@ -33,8 +37,13 @@
 </template>
 
 <script>
+import CardSeries from "@/components/CardSeries.vue";
+
 export default {
   name: "MainPage",
+  components: {
+    CardSeries,
+  },
 };
 </script>
 
@@ -45,12 +54,26 @@ main {
     font-size: 1.5rem;
     .main-img {
       background-image: url(../../public/jumbotron.jpg);
-      background-position: 0 2%;
       background-size: cover;
       background-repeat: no-repeat;
       height: 17rem;
     }
   }
+  .main-back {
+    background-color: #1c1c1c;
+  }
+  .cartoon-card {
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  .card-series {
+    flex: 0 0 15%;
+  }
+
   .container-blue-icon {
     background-color: #0282f9;
     height: 8rem;
