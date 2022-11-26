@@ -71,7 +71,7 @@ main {
     padding-bottom: 2rem;
   }
   .card-series {
-    flex: 0 0 15%;
+    flex: 0 0 calc(100 / 6);
   }
 
   .container-blue-icon {
