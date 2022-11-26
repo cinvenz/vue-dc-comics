@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <nav>
-        <img class="logo-dc" src="@/dc-logo.png" alt="DC Logo">
+        <img class="logo-dc" src="../../public/dc-logo.png" alt="DC Logo" />
         <ul>
           <li><a href="#!">CHARACTERS</a></li>
           <li><a href="#!">COMICS</a></li>
@@ -22,40 +22,40 @@
 
 <script>
 export default {
-  name: 'HeaderPage',
+  name: "HeaderPage",
 };
 </script>
 
 <style lang="scss" scoped>
-  header {
-    text-align: center;
-    height: 14vh;
-    nav {
+header {
+  text-align: center;
+  height: 6rem;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .logo-dc {
+      width: 3.5rem;
+    }
+    ul {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
       height: 100%;
-      .logo-dc {
-        width: 3.5rem;
-      }
-      ul {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: #4d5661;
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding: 0 0.5rem;
         height: 100%;
-        list-style: none;
-        a {
-          text-decoration: none;
-          color: #4D5661;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 0 .5rem;
-          height: 100%;
-          &:hover {
-            background-color: aquamarine;
-          }
+        &:hover {
+          background-color: aquamarine;
         }
       }
     }
   }
+}
 </style>

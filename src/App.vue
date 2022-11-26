@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import HeaderPage from '@/components/HeaderPage.vue';
-import MainPage from '@/components/MainPage.vue';
-import FooterPage from '@/components/FooterPage.vue';
+import HeaderPage from "@/components/HeaderPage.vue";
+import MainPage from "@/components/MainPage.vue";
+import FooterPage from "@/components/FooterPage.vue";
 
 export default {
   components: {
@@ -23,18 +23,17 @@ export default {
 </script>
 
 <style lang="scss">
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  };
-  body {
-    font-size: 0.8rem;
-    height: 100vh
-  };
-  .container {
-    max-width: 900px;
-    margin: auto;
-    height: 100%
-  };
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 0.8rem;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  height: 100%;
+}
 </style>
