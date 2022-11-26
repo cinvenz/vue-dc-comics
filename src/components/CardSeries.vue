@@ -30,6 +30,7 @@ export default {
     .card-name {
       font-size: 0.5em;
       color: white;
+      padding-top: 0.5rem;
     }
   }
 }

@@ -30,6 +30,7 @@ export default {
 }
 body {
   font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
 }
 .container {
   max-width: 900px;

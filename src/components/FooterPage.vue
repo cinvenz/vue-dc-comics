@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  height: 42vh;
+  height: 16rem;
   background-image: url(../../public/footer-bg.jpg);
   background-position: top;
   background-repeat: no-repeat;
@@ -85,11 +85,17 @@ footer {
     background-position: right;
     background-repeat: no-repeat;
     background-size: 25rem;
+    padding-bottom: 1rem;
     .footer-link {
       display: flex;
       gap: 3rem;
+      font-size: 0.6rem;
       li {
         list-style: none;
+        margin-top: 0.3rem;
+        &:hover {
+          text-decoration: underline;
+        }
         a {
           text-decoration: none;
           color: #959595;
@@ -99,7 +105,7 @@ footer {
   }
   .footer-socials {
     background-color: #303030;
-    height: 12vh;
+    height: 5rem;
     .social-icon {
       display: flex;
       align-items: center;
@@ -122,6 +128,17 @@ footer {
     margin-bottom: 0.5rem;
     margin-top: 0.8rem;
     font-size: 1rem;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    border: 2px solid #0282f9;
+    background-color: #303030;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      color: #0282f9;
+    }
   }
 }
 </style>

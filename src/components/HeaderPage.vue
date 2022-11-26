@@ -30,19 +30,23 @@ export default {
 header {
   text-align: center;
   height: 6rem;
+  font-size: 0.6rem;
+  font-weight: bold;
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     .logo-dc {
-      width: 3.5rem;
+      width: 4rem;
+      cursor: pointer;
     }
     ul {
       display: flex;
       justify-content: center;
       height: 100%;
       list-style: none;
+      gap: 0.5rem;
       a {
         text-decoration: none;
         color: #4d5661;
@@ -52,7 +56,9 @@ header {
         padding: 0 0.5rem;
         height: 100%;
         &:hover {
-          background-color: aquamarine;
+          border-top: 3px solid white;
+          border-bottom: 3px solid #0282f9;
+          color: #0282f9;
         }
       }
     }

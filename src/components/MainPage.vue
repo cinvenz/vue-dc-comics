@@ -2,10 +2,15 @@
   <main>
     <div class="container-black">
       <div class="main-img"></div>
-      <div class="current-series"></div>
       <div class="main-back">
+        <div class="current-series">
+          <p>CURRENT SERIES</p>
+        </div>
         <div class="container cartoon-card">
           <CardSeries class="" v-for="i in 12" :key="i" />
+        </div>
+        <div class="">
+          <button class="load-more">LOAD MORE</button>
         </div>
       </div>
     </div>
@@ -59,8 +64,33 @@ main {
       height: 17rem;
     }
   }
+  .current-series {
+    background-color: #0282f9;
+    height: 3rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 17.5%;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+  }
   .main-back {
     background-color: #1c1c1c;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+  .load-more {
+    background-color: #0282f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
   }
   .cartoon-card {
     flex-wrap: wrap;
@@ -68,6 +98,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
   }
   .card-series {
@@ -76,7 +107,7 @@ main {
 
   .container-blue-icon {
     background-color: #0282f9;
-    height: 8rem;
+    height: 7rem;
     color: white;
     .icons {
       display: flex;
@@ -88,8 +119,10 @@ main {
         align-items: center;
         gap: 0.4rem;
         img {
-          width: 2rem;
-          object-fit: contain;
+          width: 2.5rem;
+          height: 3rem;
+          object-fit: cover;
+          object-fit: fill;
         }
       }
     }
