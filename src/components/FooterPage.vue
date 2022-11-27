@@ -119,6 +119,7 @@ footer {
         }
         img {
           width: 1.5rem;
+          cursor: pointer;
         }
       }
     }
